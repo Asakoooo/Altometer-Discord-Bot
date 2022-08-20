@@ -25,6 +25,9 @@ client.on("messageCreate", message => {
     else if(message.content === "mention"){
         message.reply("Mention d'un utilisateur : <@" + message.author.id + "> \n Mention d'un salon : <#" + message.channel.id + ">");
     }
+    else if(message.content === "naruto"){
+        message.reply("https://media.giphy.com/media/w7CP59oLYw6PK/giphy.gif");
+    }
 });
 
 client.login(process.env.TOKEN);
